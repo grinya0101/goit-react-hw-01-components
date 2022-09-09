@@ -1,0 +1,35 @@
+.statusOnline{
+    background-color: green;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+}
+
+.statusOffline{
+    background-color: red;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+}
+
+
+.item{
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    gap: 20px;
+    width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 30px;
+    margin-top: 10px;
+    box-shadow: 4px 3px 15px rgb(216, 52, 52);
+    
+    
+
+   
+
+}
+
