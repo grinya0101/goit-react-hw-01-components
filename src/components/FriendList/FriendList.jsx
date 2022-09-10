@@ -1,5 +1,6 @@
 import {FriendListItem} from 'components/FriendListItem/FriendListItem'
 import css from 'components/FriendListItem/FriendListItem.module.css'
+import PropTypes from 'prop-types';
 
   export const FriendList = ({ friends }) => {
    
@@ -11,3 +12,13 @@ import css from 'components/FriendListItem/FriendListItem.module.css'
   };
 
 
+  FriendList.propTypes = {
+    users: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.number,
+            isOnline: PropTypes.bool,
+            name: PropTypes.string,
+            avatar: PropTypes.string
+        })
+    )
+}

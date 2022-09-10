@@ -1,5 +1,5 @@
 import css from 'components_02/Statistics/Statistics.module.css'
-
+import PropTypes from 'prop-types';
 
 
 
@@ -18,3 +18,15 @@ import css from 'components_02/Statistics/Statistics.module.css'
       </section>
     );
   };
+
+
+  Statistics.propTypes = {
+    title: PropTypes.string,
+    data: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.string,
+            label: PropTypes.string,
+            percentage: PropTypes.number
+        })
+    )
+}
